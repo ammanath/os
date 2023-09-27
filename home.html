@@ -1,107 +1,222 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Basic Fixed-width CSS Page Layout Example - resource-centre.net</title>
-  <meta name="robots" content="noindex,nofollow">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-  <style type="text/css">
-   /* over all rules */
-   *{ box-sizing:border-box; }
-   html,body{ margin:0;padding:0;background:#ddd;color:#333;font-family:'Open Sans','Trebuchet MS','Arial',sans-serif;font-size:14px; }
-   .container{ width:1200px;float:left;position:relative;left:50%;margin-left:-600px;background:#fff;padding:10px; }
-   a{ text-decoration:none;color:#c33; }
-   
-   /* header and footer */
-   header,footer,article,nav,section{ float:left;padding:10px; }
-   header,footer{ width:100%; }
-   header,footer{ background-color:#333;color:#fff;text-align:right;height:100px; }
-   header{ font-size:1.8em;font-weight:bold; }
-   header big{ line-height:130px;vertical-align:bottom; }
-   
-   footer{ background-color:#999;text-align:center;height:40px; }
-   footer a{ text-decoration:underline;color:#fff;font-weight:bold; }
-   
-   /* navigation on the left hand side */
-   nav{ text-align:center;width:24%;margin-right:1%;border:1px solid #ccc;margin:5px; }
-   nav a{ display:block;width:100%;background-color:#c33;color:#fff;height:30px;margin-bottom:10px;padding:10px;border-radius:3px;line-height:10px;vertical-align:middle; }
-   nav a:hover,nav a:active{ background-color:#226; }
-   
-   /* <article> tag is our 'content area' */
-   article{ width:75%; }
-   h1{ padding:0;margin:0 0 20px 0; }
-   
-   /* section */
-   article section{ padding:0; }
-   
-   /* basic page division */
-   .halves,.thirds{ width:49%;float:left;margin-right:2%; }
-   .thirds{ width:32.66666%;margin-right:1%; }
-   
-   .last{ margin-right:0; }
-  </style>
- </head> 
- <body>
-  <div class="container">
-   <header>
-    <big>Example Page Layout With CSS</big>
-   </header>
-   <nav>
-    <a href="#section1">Section 1</a>
-    <a href="#section2">Section 2</a>
-    <a href="#section3">Section 3</a>
-   </nav>
-   <article>
-    <h1>A Better Approch Than Tables or Frames</h1>
-    <p>
-     This working file is a <strong>fixed-width layout</strong> made possible through the use of HTML5 tags and CSS3. 
-    </p>
-    <p>
-     You can use this instead of tables or frames. Feel free to adapt this as much as you want to make your own website layout.   
-    </p>
-    <hr>
-    <h2>Dividing The Page Into Sections</h2>
-    <section>
-     <div class="thirds">
-      <p>
-       You can split up your content into columns, but be careful of not exceeding 100%.
-      </p>
-     </div>
-     <div class="thirds">
-      <p>
-       If you do, you will find one of your intended 'columns' is pushed underneath the others.
-      </p>
-     </div>
-     <div class="thirds last">
-      <p>
-       This may take some tweaking of the <strong>width</strong> and <strong>margin-right</strong> properties.
-      </p>
-     </div>
-    </section>
-    <hr>
-    <h2>Go Halves</h2>
-    <section>
-     <div class="halves">
-      <p>
-       You can equally divide the page into halves. Just bear in mind that your 100% is a total of your
-       column width percentages and your margin percentages.
-      </p>
-      <p>
-       We have used a <strong>.last</strong> class to ensure there is no <strong>margin-right</strong> on the final column so it sits flush to the right of our site.
-      </p>
-     </div>
-     <div class="halves last">
-      When in doubt, do the maths.<br>
-      <ul>
-       <li>2 Columns at 49% = 98%</li>
-       <li>Add one margin right at 1%. Total is now 99%;</li>
-       <li>This means for 50% width in this case you should have done: (100% - 1%) divided by 2 = 49.5%</li>
-      </ul>
-     </div>
-    </section>
-   </article>
-   <footer>
-    Example Code Courtesy of <a href="http://resource-centre.net" title="The Free Tutorial Centre">The Free Tutorial Centre</a>
-   </footer>
-  </div>  
- </body>   
+  <head>
+    <title>
+      Basic Fixed-width CSS Page Layout Example - resource-centre.net
+    </title>
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      /* over all rules */
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #ddd;
+        color: #333;
+        font-family: "Open Sans", "Trebuchet MS", "Arial", sans-serif;
+        font-size: 14px;
+      }
+      .container {
+        width: 1400px;
+        float: left;
+        position: relative;
+        left: 50%;
+        margin-left: -600px;
+        background: #fff;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #c33;
+      }
+
+      /* header and footer */
+      header,
+      footer,
+      article,
+      nav,
+      section {
+        float: left;
+        padding: 10px;
+      }
+      header,
+      footer {
+        width: 100%;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: right;
+        height: 100px;
+      }
+      header {
+        font-size: 1.8em;
+        font-weight: bold;
+      }
+      header big {
+        line-height: 130px;
+        vertical-align: bottom;
+      }
+
+      footer {
+        background-color: #999;
+        text-align: center;
+        height: 40px;
+      }
+      footer a {
+        text-decoration: underline;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      /* navigation on the left hand side */
+      nav {
+        text-align: center;
+        width: 24%;
+        margin-right: 1%;
+        border: 1px solid #ccc;
+        margin: 5px;
+      }
+      nav a {
+        display: block;
+        width: 100%;
+        background-color: #c33;
+        color: #fff;
+        height: 30px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 3px;
+        line-height: 10px;
+        vertical-align: middle;
+      }
+      nav a:hover,
+      nav a:active {
+        background-color: #226;
+      }
+
+      /* <article> tag is our 'content area' */
+      article {
+        width: 75%;
+      }
+      h1 {
+        padding: 0;
+        margin: 0 0 20px 0;
+      }
+
+      /* section */
+      article section {
+        padding: 0;
+      }
+
+      /* basic page division */
+      .halves,
+      .thirds {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+      }
+      .thirds {
+        width: 32.66666%;
+        margin-right: 1%;
+      }
+
+      .last {
+        margin-right: 0;
+      }
+
+      .inner-doc {
+        background-color: rgb(99, 96, 96);
+        height: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <big>Example Page Layout With CSS</big>
+      </header>
+      <nav>
+        <a href="/documents/12Sep23.jpeg" target="imgbox">12 Sep 2023</a>
+        <a href="/documents/red.jpg" target="imgbox">12 July 2023</a>
+        <a href="/documents/blue.jpg" target="imgbox">12 May 2023</a>
+      </nav>
+      <article>
+        <div class="inner-doc">
+          <iframe
+            frameborder="0"
+            scrolling="yes"
+            width=100%
+            height=100%
+            src="/documents/12Sep23.jpeg"
+            name="imgbox"
+            id="imgbox"
+          >
+        </div>
+        <hr />
+        <h2>Dividing The Page Into Sections</h2>
+        <section>
+          <div class="thirds">
+            <p>
+              You can split up your content into columns, but be careful of not
+              exceeding 100%.
+            </p>
+          </div>
+          <div class="thirds">
+            <p>
+              If you do, you will find one of your intended 'columns' is pushed
+              underneath the others.
+            </p>
+          </div>
+          <div class="thirds last">
+            <p>
+              This may take some tweaking of the <strong>width</strong> and
+              <strong>margin-right</strong> properties.
+            </p>
+          </div>
+        </section>
+        <hr />
+        <h2>Go Halves</h2>
+        <section>
+          <div class="halves">
+            <p>
+              You can equally divide the page into halves. Just bear in mind
+              that your 100% is a total of your column width percentages and
+              your margin percentages.
+            </p>
+            <p>
+              We have used a <strong>.last</strong> class to ensure there is no
+              <strong>margin-right</strong> on the final column so it sits flush
+              to the right of our site.
+            </p>
+          </div>
+          <div class="halves last">
+            When in doubt, do the maths.<br />
+            <ul>
+              <li>2 Columns at 49% = 98%</li>
+              <li>Add one margin right at 1%. Total is now 99%;</li>
+              <li>
+                This means for 50% width in this case you should have done:
+                (100% - 1%) divided by 2 = 49.5%
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <footer>
+        Example Code Courtesy of
+        <a href="http://resource-centre.net" title="The Free Tutorial Centre"
+          >The Free Tutorial Centre</a
+        >
+      </footer>
+    </div>
+  </body>
 </html>
