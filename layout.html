@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omkarshree Home Page</title>
 <style>
 * {
   box-sizing: border-box;
@@ -66,7 +70,7 @@ body {
   padding: 20px;
 }
 /*the imagem will be heigth 1200px automatic*/
-.img{
+.img-container{
   height: inherit; 
   min-width: 100%;
 }
@@ -109,16 +113,27 @@ body {
   }
 }
 </style>
+<script>
+  function changeImage(srcPath){
+    
+  var image = document.getElementById("imgbox");
+  image.src = srcPath
+  }
+</script>
 </head>
 <body>
 
 <div class="header">
-  <h1>My Website</h1>
-  <p>Resize the browser window to see the effect.</p>
+  <h1>Omkar Shree Co-Op Housing Society/h1>
+  <p>Survey No. 14, Wanworie, Pune 411040</p>
 </div>
 
 <div class="topnav">
-  <a href="#">Link</a>
+  <a href="/documents/red.jpg" target="imgbox">Red Ball</a>
+  <a href="/documents/12Sep23.jpeg" target="imgbox">12 Sep 2023</a>
+  <button onclick="changeImage('/documents/12Sep23.jpeg')">Doc!</button>
+  <button onclick="changeImage('/documents/blue.jpg')">Blue!</button>
+  <button onclick="changeImage('/documents/12Sep23.jpeg')">Doc!</button>
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#" style="float:right">Link</a>
@@ -131,7 +146,7 @@ body {
       <h5>Title description, Dec 7, 2017</h5>
       <div class="img-container" style="height:1200px;">Image
         <img src="/documents/12Sep23.jpeg" name="imgbox"
-        id="imgbox" class="img">
+        id="imgbox" >
       </div>
       <p>Some text..</p>
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
