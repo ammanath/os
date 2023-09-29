@@ -1,161 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    <title>Omkarshree Home Page</title>
 
-<style>
-body {
-  font-family: Arial;
-  padding: 10px;
-  background: #f1f1f1;
-}
+    <title>Omkarshree Soc. Home Page</title>
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: white;
-}
+    <style>
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
 
-.header h1 {
-  font-size: 50px;
-}
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
 
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+      .header h1 {
+        font-size: 50px;
+      }
 
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
 
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 85%;
-}
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 15%;
-  background-color: #f1f1f1;
-  padding-left: 20px;
-}
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-/*the imagem will be heigth 1200px automatic*/
-.img-container{
-  height: inherit; 
-  min-width: 100%;
-}
+      .img-container {
+        height: inherit;
+        min-width: 100%;
+      }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+        color: rgb(77, 76, 80);
+      }
 
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      .home{
+        display: block;
+        height: 400px;
+      }
+      .notification{
+        display: none;
+      }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .centercolumn {
+          width: 100%;
+          align-self: center;
+          padding: 0;
+        }
+      }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn , .centercolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-  }
-}
-</style>
-<script>
-  function changeImage(srcPath){
-    
-  var image = document.getElementById("imgbox");
-  image.src = srcPath
-  }
-</script>
-</head>
-<body>
+    <script>
+      function changeImage(srcPath) {
+        var image = document.getElementById("imgbox");
+        var home = document.getElementById("hom");
+        var notification = document.getElementById("notify");
+        
+        home.style.display = "none";
+        notification.style.display = "block";
+        image.src = srcPath;
+      }
 
-<div class="header">
-  <h1>Omkar Shree Co-Op Housing Society</h1>
-  <p>Survey No. 14, Wanworie, Pune 411040</p>
-</div>
+      function goToHome(){
+        
+        var home = document.getElementById("hom");
+        var notification = document.getElementById("notify");
+        
+        home.style.display = "block";
+        notification.style.display = "none";
+        
+      }
 
-<div class="topnav">
-  <a  onclick="changeImage('/documents/12Sep23.jpeg')">12 Sep 2023</a>
-  <a  onclick="changeImage('/documents/26Aug23.jpeg')">26 Aug 2023</a>
-  <a  onclick="changeImage('/documents/25Jul23.jpeg')">25 Jul 2023</a>
-  <a  onclick="changeImage('/documents/24Jun23Pg1.jpeg')">24 Jun 2023 Pg 1</a>
-  <a  onclick="changeImage('/documents/24Jun23Pg2.jpeg')">24 Jun 2023 Pg 2</a>
-  <a href="#" style="float:right">Home</a>
-</div>
-
-<div class="row">
-  <div class="centercolumn">
-    <div class="card">
-      <h2>Notification</h2>
-      <h5>Official notification published by the Management Committee. For any clarifications please contact the society office.</h5>
-      <div class="img-container" style="height:1200px;">
-        <img src="/documents/12Sep23.jpeg" name="imgbox"
-        id="imgbox" >
-
-      </div>
-      <br>      <br>      <br>      <br><br>
-      
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Omkar Shree Co-Op Housing Society</h1>
+      <p>Survey No. 14, Wanworie, Pune 411040</p>
     </div>
-  </div>
-</div>
 
-<div class="footer">
-  <h2>All information is confidential and for the consumption of the residents of Omkarshree Housing Society only.</h2>
-</div>
+    <div class="topnav">
+      <a onclick="changeImage('/documents/12Sep23.jpeg')">12 Sep 2023</a>
+      <a onclick="changeImage('/documents/26Aug23.jpeg')">26 Aug 2023</a>
+      <a onclick="changeImage('/documents/25Jul23.jpeg')">25 Jul 2023</a>
+      <a onclick="changeImage('/documents/24Jun23Pg1.jpeg')"
+        >24 Jun 2023 Pg 1</a
+      >
+      <a onclick="changeImage('/documents/24Jun23Pg2.jpeg')"
+        >24 Jun 2023 Pg 2</a
+      >
+      <a onclick="goToHome()" style="float: right">Home</a>
+    </div>
 
-</body>
+
+      <div class="centercolumn">
+        <div class="notification" id="notify">
+          <h2>Notification</h2>
+          <h5>
+            Official notification published by the Management Committee. For any
+            clarifications please contact the society office.
+          </h5>
+          <div class="img-container" style="height: 1200px">
+            <img src="/documents/12Sep23.jpeg" name="imgbox" id="imgbox" />
+          </div>
+          <br />
+          <br />
+          <br />
+          <br /><br />
+        </div>
+        <div class="home" id="hom" >
+          <h2>Management Committee Members</h2>
+          <h3>Chairman : Mr. Harish Kumar Lenka</h3>
+          <h3>Secretary : Mr. Kailas Shivarkar</h3>
+        </div>
+      </div>
+
+
+    <div class="footer">
+      <h4>
+        All information is confidential and for the consumption of the residents
+        of Omkarshree Housing Society only.
+      </h2>
+    </div>
+  </body>
 </html>
-
-
