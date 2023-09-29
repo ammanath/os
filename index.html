@@ -61,20 +61,19 @@
         color: rgb(77, 76, 80);
       }
 
-      .centercolumn{
+      .centercolumn {
         border-color: black;
         border-style: solid;
         border-width: 1px;
         text-align: center;
       }
-      .home{
+      .home {
         display: block;
         height: 400px;
       }
-      .notification{
+      .notification {
         display: none;
       }
-
     </style>
 
     <script>
@@ -82,22 +81,19 @@
         var image = document.getElementById("imgbox");
         var home = document.getElementById("hom");
         var notification = document.getElementById("notify");
-        
+
         home.style.display = "none";
         notification.style.display = "block";
         image.src = srcPath;
       }
 
-      function goToHome(){
-        
+      function goToHome() {
         var home = document.getElementById("hom");
         var notification = document.getElementById("notify");
-        
+
         home.style.display = "block";
         notification.style.display = "none";
-        
       }
-
     </script>
   </head>
   <body>
@@ -111,36 +107,35 @@
       <a onclick="changeImage('/documents/12Sep23.jpeg')">12 Sep 2023</a>
       <a onclick="changeImage('/documents/26Aug23.jpeg')">26 Aug 2023</a>
       <a onclick="changeImage('/documents/25Jul23.jpeg')">25 Jul 2023</a>
-      <a onclick="changeImage('/documents/24Jun23Pg1.jpeg')"        >24 Jun 2023 Pg 1</a      >
+      <a onclick="changeImage('/documents/24Jun23Pg1.jpeg')"
+        >24 Jun 2023 Pg 1</a
+      >
       <a onclick="changeImage('/documents/24Jun23Pg2.jpeg')"
         >24 Jun 2023 Pg 2</a
       >
-      
     </div>
 
-
-      <div class="centercolumn">
-        <div class="notification" id="notify">
-          <h2>Notification</h2>
-          <h5>
-            Official notification published by the Management Committee. For any
-            clarifications please contact the society office.
-          </h5>
-          <div class="img-container" style="height: 1200px">
-            <img src="/documents/12Sep23.jpeg" name="imgbox" id="imgbox" />
-          </div>
-          <br />
-          <br />
-          <br />
-          <br /><br />
+    <div class="centercolumn">
+      <div class="notification" id="notify">
+        <h2>Notification</h2>
+        <h5>
+          Official notification published by the Management Committee. For any
+          clarifications please contact the society office.
+        </h5>
+        <div class="img-container" style="height: 1200px">
+          <img src="/documents/12Sep23.jpeg" name="imgbox" id="imgbox" />
         </div>
-        <div class="home" id="hom" >
-          <h2>Management Committee Members</h2>
-          <h3>Chairman : Mr. Harish Kumar Lenka</h3>
-          <h3>Secretary : Mr. Kailas Shivarkar</h3>
-        </div>
+        <br />
+        <br />
+        <br />
+        <br /><br />
       </div>
-
+      <div class="home" id="hom">
+        <h2>Management Committee Members</h2>
+        <h3>Chairman : Mr. Harish Kumar Lenka</h3>
+        <h3>Secretary : Mr. Kailas Shivarkar</h3>
+      </div>
+    </div>
 
     <div class="footer">
       <h4>
