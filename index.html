@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>Omkarshree Soc. Home Page</title>
 
     <style>
@@ -21,9 +26,6 @@
         background: rgb(218, 219, 233);
       }
 
-      .header h1 {
-        font-size: 50px;
-      }
 
       /* Style the top navigation bar */
       .topnav {
@@ -76,14 +78,23 @@
         display: none;
       }
       .lenka,
-      .shivarkar{
-        color:rgb(19, 22, 209);
-        display:inline;
+      .shivarkar {
+        color: rgb(19, 22, 209);
+        display: inline;
         text-decoration: underline;
       }
 
-      .mobile{
-        font-style:normal;
+      .mobile {
+        font-style: normal;
+      }
+
+      .header-h1{
+        font-family: 'Young Serif', serif;
+        font-size: 40px;
+      }
+      .header-p{
+        font-family: 'Young Serif', serif;
+        font-size: 20px;
       }
     </style>
 
@@ -109,8 +120,8 @@
   </head>
   <body>
     <div class="header">
-      <h1>Omkar Shree Co-Op Housing Society</h1>
-      <p>Survey No. 14, Wanworie, Pune 411040</p>
+      <h1 class="header-h1">Omkar Shree Co-Op Housing Society</h1>
+      <p class="header-p">Survey No. 14, Wanworie, Pune 411040</p>
     </div>
 
     <div class="topnav">
@@ -143,15 +154,19 @@
       </div>
       <div class="home" id="hom">
         <h2>Management Committee Members</h2>
-        <hr>
-        <hr>
-        <h3>Chairman : Mr. Haresh Kumar <div class="lenka">Lenka</div></h3>
-        <h4 class="mobile">Mobile :  9373744353, 8308660647
-        </h4>
-        <hr>
-        <h3>Secretary : Mr. Kailash <div class="shivarkar">Shivarkar</div></h3>
-        <h4 class="mobile">Mobile : 9860606095
-        </h4>
+        <hr />
+        <hr />
+        <h3>
+          Chairman : Mr. Haresh Kumar
+          <div class="lenka">Lenka</div>
+        </h3>
+        <h4 class="mobile">Mobile : 9373744353, 8308660647</h4>
+        <hr />
+        <h3>
+          Secretary : Mr. Kailash
+          <div class="shivarkar">Shivarkar</div>
+        </h3>
+        <h4 class="mobile">Mobile : 9860606095</h4>
       </div>
     </div>
 
