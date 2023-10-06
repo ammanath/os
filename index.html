@@ -26,7 +26,6 @@
         background: rgb(218, 219, 233);
       }
 
-
       /* Style the top navigation bar */
       .topnav {
         overflow: hidden;
@@ -88,13 +87,22 @@
         font-style: normal;
       }
 
-      .header-h1{
-        font-family: 'Young Serif', serif;
+      .header-h1 {
+        font-family: "Young Serif", serif;
         font-size: 30px;
       }
-      .header-p{
-        font-family: 'Young Serif', serif;
+      .header-p {
+        font-family: "Young Serif", serif;
         font-size: 15px;
+      }
+
+      .home-image {
+        width: 30px;
+        float: left;
+        padding-top: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        cursor: pointer;
       }
     </style>
 
@@ -125,7 +133,8 @@
     </div>
 
     <div class="topnav">
-      <a onclick="goToHome()" style="float: left">Home</a>
+
+      <img src="images/home2.png" class="home-image" onclick="goToHome()" />
       <a onclick="changeImage('/documents/12Sep23.jpeg')">12 Sep 2023</a>
       <a onclick="changeImage('/documents/26Aug23.jpeg')">26 Aug 2023</a>
       <a onclick="changeImage('/documents/25Jul23.jpeg')">25 Jul 2023</a>
