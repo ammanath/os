@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -21,7 +21,7 @@
 
       /* Header/Blog Title */
       .header {
-        padding: 30px;
+        padding: 10px;
         text-align: center;
         background: rgb(218, 219, 233);
       }
@@ -35,10 +35,12 @@
       /* Style the topnav links */
       .topnav a {
         float: left;
-        display: block;
+        
         color: #f2f2f2;
         text-align: center;
-        padding: 14px 16px;
+        padding: 22px 16px;
+        margin: 0,0;
+        vertical-align: top;
         text-decoration: none;
       }
 
@@ -98,11 +100,17 @@
 
       .home-image {
         width: 30px;
-        float: left;
+        float: center;
         padding-top: 12px;
         padding-left: 12px;
         padding-right: 12px;
         cursor: pointer;
+      }
+      .notification-text{
+        display: inline-block;
+        color: #f2f2f2;
+        float: left;
+        padding-left: 20px;
       }
     </style>
 
@@ -130,11 +138,12 @@
     <div class="header">
       <h1 class="header-h1">Omkar Shree Co-Op Housing Society</h1>
       <p class="header-p">Survey No. 14, Wanworie, Pune 411040</p>
+      <img src="images/home2.png" class="home-image" onclick="goToHome()" />
     </div>
 
     <div class="topnav">
 
-      <img src="images/home2.png" class="home-image" onclick="goToHome()" />
+      <h4  class="notification-text">Notifications: </h4>
       <a onclick="changeImage('/documents/12Sep23.jpeg')">12 Sep 2023</a>
       <a onclick="changeImage('/documents/26Aug23.jpeg')">26 Aug 2023</a>
       <a onclick="changeImage('/documents/25Jul23.jpeg')">25 Jul 2023</a>
@@ -187,3 +196,4 @@
     </div>
   </body>
 </html>
+}
