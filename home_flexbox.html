@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Flexbox - Home</title>
+    <style>
+      .header-top,
+      .nav-top,
+      .article-main,
+      .aside-main,
+      .section-top,
+      .footer-end,
+      .top-container-div {
+        border: 1px;
+        border-style: solid;
+        border-color: goldenrod;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="top-container-div" style="background-color: whitesmoke; display: flex; flex-direction: row;">
+      <header class="header-top" style="background-color: rgb(137, 58, 211); flex: 5;">
+        Header <br />
+        Header 2
+      </header>
+      <nav class="nav-top" style="background-color: rgb(240, 114, 219)">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <article class="article-main" style="background-color: rgb(165, 67, 72)">
+        Article 1
+        <h1>This is the biggest one</h1>
+        <h2>This one is a little smaller</h2>
+        <h3>This one is even smaller</h3>
+        <h4>They keep getting smaller</h4>
+        <h5>This one isn't even that big</h5>
+        <h6>Pretty small now, actually</h6>
+      </article>
+      <aside class="aside-main" style="background-color: rgb(134, 10, 62)">
+        Aside1
+      </aside>
+      <section class="section-top">Section</section>
+      <footer class="footer-end">Footer</footer>
+    </div>
+  </body>
+</html>

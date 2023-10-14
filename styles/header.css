@@ -1,0 +1,25 @@
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: rgb(218, 219, 233);
+}
+
+.header-h1 {
+  font-family: "Young Serif", serif;
+  font-size: 30px;
+}
+
+.header-p {
+  font-family: "Young Serif", serif;
+  font-size: 15px;
+}
+
+.home-image {
+  width: 30px;
+  float: center;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
