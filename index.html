@@ -26,7 +26,6 @@
         var image = document.getElementById("imgbox");
         var home = document.getElementById("hom");
         var notification = document.getElementById("notify");
-
         home.style.display = "none";
         notification.style.display = "block";
         image.src = srcPath;
@@ -50,6 +49,7 @@
 
     <div class="topnav">
       <h4 class="notification-text">Notifications:</h4>
+      <a onclick="changeImage('/documents/mou1.jpg')">MoU</a>
       <a onclick="changeImage('/documents/12Sep23.jpeg')">12 Sep 2023</a>
       <a onclick="changeImage('/documents/26Aug23.jpeg')">26 Aug 2023</a>
       <a onclick="changeImage('/documents/25Jul23.jpeg')">25 Jul 2023</a>
